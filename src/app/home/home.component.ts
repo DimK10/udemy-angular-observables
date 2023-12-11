@@ -27,9 +27,9 @@ export class HomeComponent implements OnInit, OnDestroy {
         if (count === 5) {
           observer.complete();
         }
-        if (count > 3) {
-          observer.error(new Error('Count is greater than 3!'));
-        }
+        // if (count > 3) {
+        //   observer.error(new Error('Count is greater than 3!'));
+        // }
         count++;
       }, 1000);
     });
